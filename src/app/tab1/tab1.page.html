@@ -1,29 +1,10 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tab 1 </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-toolbar>
-    <ion-searchbar
-      debounce="1000"
-      (ionChange)="getData($event)"
-    ></ion-searchbar>
-  </ion-toolbar>
-
-  <ion-card *ngFor="let item of coktailList">
-    <ion-card-header>
-      <ion-card-title>{{item.strDrink}}</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      <img src="{{item.strDrinkThumb}}" alt="5px" />
-    </ion-card-content>
-  </ion-card>
+  <h1 class="title">Live the experience</h1>
+  <div class="drink">
+    <img
+      src="https://pngimg.com/uploads/cocktail/small/cocktail_PNG81.png"
+      alt="80px"
+      class="center"
+    />
+  </div>
 </ion-content>
