@@ -1,9 +1,11 @@
 ion-title {
   text-align: center;
+  margin-top: 1%;
 }
 
 ion-card-title {
   text-align: center;
+  border: 5px solid black;
 }
 ion-content {
   --background: #d6d6d6;
@@ -13,4 +15,44 @@ ion-content {
   ion-toolbar {
     --background: #d6d6d6;
   }
+
+  ion-card {
+    --background: #f6f6f6;
+    ion-card-title {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  ion-list {
+    --background: #f6f6f6;
+    ion-item {
+      --background: #f6f6f6;
+    }
+    ion-label {
+      margin-top: 10px;
+      --background: #f6f6f6;
+    }
+  }
+}
+
+.add {
+  margin-top: 30px;
+}
+
+.remove {
+  margin-top: 30px;
+  margin-left: 149px;
+}
+
+.component {
+  margin-top: 30px;
+}
+
+.left {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  --background: #f6f6f6;
+  border: 2px solid black;
 }

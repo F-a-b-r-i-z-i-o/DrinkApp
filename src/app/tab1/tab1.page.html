@@ -6,5 +6,10 @@
       alt="80px"
       class="center"
     />
+    <ion-searchbar
+      placeholder="Would u like to drink?"
+      debounce="1000"
+      (ionChange)="ionChange($event)"
+    ></ion-searchbar>
   </div>
 </ion-content>

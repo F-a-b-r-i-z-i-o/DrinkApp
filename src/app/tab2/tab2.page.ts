@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -7,17 +8,20 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['tab2.page.scss'],
 })
 export class Tab2Page implements OnInit {
-  cocktailName = [];
   ingridients: any;
   coktailList: any;
   control = null;
+  scan = [];
 
-  constructor(private http: HttpClient) {}
+  //name pass by tab1page
+  cocktailName = this.router.getCurrentNavigation().extras.state.cocktailName;
+
+  constructor(private http: HttpClient, private router: Router) {}
 
   getData() {
+    console.log(this.cocktailName);
     this.control = true;
     if ((this.control = true)) {
-      this.ionChange(event);
       this.http
         .get(
           'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' +
@@ -27,8 +31,6 @@ export class Tab2Page implements OnInit {
           console.log(data);
           this.coktailList = data.drinks;
           console.log(this.coktailList);
-          this.cocktailName.pop();
-          console.log(this.cocktailName);
         });
     } else {
       this.coktailList = [];
@@ -36,7 +38,7 @@ export class Tab2Page implements OnInit {
       console.log('Vuoto');
     }
   }
-
+  /*
   ionChange(event) {
     console.log(event.detail.value);
     let name = event.detail.value;
@@ -44,6 +46,7 @@ export class Tab2Page implements OnInit {
     console.log('okkkkkkk');
     console.log(this.cocktailName);
   }
+  */
 
   ngOnInit() {
     this.getData();

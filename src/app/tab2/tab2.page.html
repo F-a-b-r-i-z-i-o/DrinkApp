@@ -1,16 +1,9 @@
 <ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Choose your drink</ion-title>
+      <ion-title size="large">Choose your drink!</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-toolbar>
-    <ion-searchbar
-      debounce="1000"
-      (ionChange)="getData($event)"
-    ></ion-searchbar>
-  </ion-toolbar>
-
   <ion-card *ngFor="let item of coktailList; index as i">
     <ion-card-header>
       <ion-card-title>{{item.strDrink}}</ion-card-title>
@@ -18,24 +11,33 @@
 
     <ion-card-content>
       <img src="{{item.strDrinkThumb}}" alt="3px" />
-      <h1>Ingrediants:</h1>
-      <p>{{item.strIngredient1}}</p>
-      <p>{{item.strIngredient2}}</p>
-      <p>{{item.strIngredient3}}</p>
-      <p>{{item.strIngredient4}}</p>
-      <p>{{item.strIngredient5}}</p>
-      <p>{{item.strIngredient6}}</p>
-      <p>{{item.strIngredient7}}</p>
-      <p>{{item.strIngredient8}}</p>
-      <p>{{item.strIngredient9}}</p>
-      <p>{{item.strIngredient10}}</p>
-      <p>{{item.strIngredient11}}</p>
-      <p>{{item.strIngredient12}}</p>
-      <p>{{item.strIngredient13}}</p>
-      <p>{{item.strIngredient14}}</p>
-      <p>{{item.strIngredient15}}</p>
-      <h1>Type of drink:</h1>
-      <p>{{item.strCategory}}</p>
+      <div class="component">
+        <h1 class="left">Ingrediants</h1>
+        <ion-list>
+          <ion-item>
+            <ion-label>{{item.strIngredient1}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{item.strIngredient2}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{item.strIngredient3}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{item.strIngredient4}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+      <div class="component">
+        <h1 class="left">Type of drink</h1>
+        <ion-list>
+          <ion-item>
+            <ion-label>{{item.strCategory}}</ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-button class="add" color="success">Add</ion-button>
+        <ion-button class="remove" color="danger">Remove</ion-button>
+      </div>
     </ion-card-content>
   </ion-card>
 </ion-content>
