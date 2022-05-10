@@ -13,7 +13,7 @@ The following project is divided into 3 parts.
 
 <hr>
 
-##Tab1
+## Tab1
 
 Inside the first section it is possible to search in the search bar the drink of our interest, then the specifications of the selected drink will be shown.
 
