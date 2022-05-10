@@ -63,7 +63,7 @@ In the 3 section it will be possible to see the bookings made, in this moment I 
 
 ![tab3](./imgs/tab3.png) <br>
 
-# Because Alcohol Comes First
+# *Because Alcohol Comes First*
 
 *Enjoy 2F*
 
