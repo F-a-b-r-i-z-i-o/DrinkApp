@@ -19,6 +19,10 @@ Inside the first section it is possible to search in the search bar the drink of
 
 <br>
 
+![tab1](./imgs/tab1.png) 
+
+<br>
+
   - **Important**
 
 to carry out searches the language supported at the moment is only English
@@ -27,9 +31,8 @@ to carry out searches the language supported at the moment is only English
 
 After doing our research we will be sent to the research section. 
 
-![prog2](./imgs/prog2.png) <br>
 
-![prog2](./imgs/prog2.png) <br>
+![tab1-bar](./imgs/tab1-bar.png) <br>
 
 <br>
 
@@ -39,7 +42,8 @@ Within the second tab we can see all the specifications of the drink we searched
 In addition, through the buttons it is possible to add the drink of our interest to the reservation. 
 For this section it is advisable to implement a back-end for reservations.
 
-Inserire foto
+
+![tab2](./imgs/tab2.png) <br>
 
 <br>
 
