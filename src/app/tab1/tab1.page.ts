@@ -7,11 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page implements OnInit {
+  //list name of cocktails
   cocktailName = [];
+  //guard
   control = false;
 
   constructor(private route: Router) {}
-
+  //keep the event input by the bar
   ionChange(event) {
     if (this.cocktailName.length < 1) {
       this.control = true;
@@ -20,13 +22,13 @@ export class Tab1Page implements OnInit {
       this.cocktailName.push(name);
       console.log(this.cocktailName);
       console.log(this.cocktailName.length);
+      //pass the data
       this.route.navigate(['tabs/tab2'], { state: { cocktailName: name } });
     } else {
       console.log('ok');
     }
   }
   ngOnInit() {
-    //this.getNameCock();
     console.log('PPASSSS');
   }
 }
