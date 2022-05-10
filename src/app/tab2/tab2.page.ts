@@ -10,14 +10,14 @@ import { Router } from '@angular/router';
 export class Tab2Page implements OnInit {
   ingridients: any;
   coktailList: any;
-  control = null;
-  scan = [];
+  control = false;
 
   //name pass by tab1page
   cocktailName = this.router.getCurrentNavigation().extras.state.cocktailName;
 
   constructor(private http: HttpClient, private router: Router) {}
 
+  //function to get data by the API
   getData() {
     console.log(this.cocktailName);
     this.control = true;
@@ -29,26 +29,20 @@ export class Tab2Page implements OnInit {
         )
         .subscribe((data: any) => {
           console.log(data);
+          //list of cocktail
           this.coktailList = data.drinks;
           console.log(this.coktailList);
         });
     } else {
+      //empty list
       this.coktailList = [];
       this.control = false;
       console.log('Vuoto');
     }
   }
-  /*
-  ionChange(event) {
-    console.log(event.detail.value);
-    let name = event.detail.value;
-    this.cocktailName.push(name);
-    console.log('okkkkkkk');
-    console.log(this.cocktailName);
-  }
-  */
 
   ngOnInit() {
     this.getData();
   }
 }
+
