@@ -27,7 +27,9 @@ to carry out searches the language supported at the moment is only English
 
 After doing our research we will be sent to the research section. 
 
-Inserire foto
+![prog2](./imgs/prog2.png) <br>
+
+![prog2](./imgs/prog2.png) <br>
 
 <br>
 
