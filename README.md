@@ -19,9 +19,7 @@ Inside the first section it is possible to search in the search bar the drink of
 
 <br>
 
-<center>
-  ![tab1](./imgs/tab1.png) 
-</center>
+![tab1](./imgs/tab1.png) 
 
 <br>
 
