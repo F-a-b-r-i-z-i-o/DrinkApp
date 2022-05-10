@@ -38,12 +38,20 @@ After doing our research we will be sent to the research section.
 
 ## Tab2
 
+<br>
+
+![tab21](./imgs/tab21.png) <br>
+
 Within the second tab we can see all the specifications of the drink we searched for earlier. Within the second tab we can see all the specifications of the drink we searched for earlier. 
+
+<br>
+
+![tab21](./imgs/tab22.png) <br>
+
 In addition, through the buttons it is possible to add the drink of our interest to the reservation. 
 For this section it is advisable to implement a back-end for reservations.
 
-
-![tab2](./imgs/tab2.png) <br>
+![tab21](./imgs/tab23.png) <br>
 
 <br>
 
@@ -53,5 +61,6 @@ For this section it is advisable to implement a back-end for reservations.
 
 In the 3 section it will be possible to see the bookings made, in this moment I have not implemented the back-end for the bookings so the cocktail list will be momentarily empty
 
+![tab3](./imgs/tab3.png) <br>
 
 
