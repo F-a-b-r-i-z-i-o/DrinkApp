@@ -1,9 +1,4 @@
 <ion-content>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Choose your drink!</ion-title>
-    </ion-toolbar>
-  </ion-header>
   <ion-card *ngFor="let item of coktailList; index as i">
     <ion-card-header>
       <ion-card-title>{{item.strDrink}}</ion-card-title>
@@ -12,7 +7,7 @@
     <ion-card-content>
       <img src="{{item.strDrinkThumb}}" alt="3px" />
       <div class="component">
-        <h1 class="left">Ingrediants</h1>
+        <h1 class="left">Ingredients</h1>
         <ion-list>
           <ion-item>
             <ion-label class="component2">{{item.strIngredient1}}</ion-label>
@@ -44,3 +39,4 @@
     </ion-card-content>
   </ion-card>
 </ion-content>
+
