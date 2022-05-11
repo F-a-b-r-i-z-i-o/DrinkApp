@@ -1,5 +1,24 @@
 # DrinkApp
 
+## Installation
+
+This project is developed using **angular 13.2.2** and **ionic 5.9.2**.
+
+To develop the project it is necessary to install nodejs, the installation of node is different in each operating system (see installation documentation).
+After doing this you need to install angular.
+
+`npm install -g @angular/cli`
+
+after installing angular it is necessary to install ionic.
+
+` npm install -g @ionic/cli`
+
+After installing ionic I generated the project only with Cordova as Capacitor gives me some problems.
+
+`ionic start nameProject tabs --type=angular --cordova`
+
+<hr>
+
 The following project is divided into 3 parts.
 
 <hr>
